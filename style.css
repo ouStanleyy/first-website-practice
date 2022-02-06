@@ -45,7 +45,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 48px;
+  height: 68px;
   width: 100%;
   padding: 0 32px;
   color: white;
@@ -91,7 +91,7 @@ nav ul li {
   text-shadow: 0 0 5px black;
 }
 
-main {
+section {
   position: relative;
   display: flex;
   justify-content: center;
@@ -147,17 +147,92 @@ main {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  /* z-index: -1; */
+}
+
+#forge {
+  z-index: -3;
+}
+
+.forge-div {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* height: 48px; */
+  top: 120em;
+  height: 10em;
+  width: 100%;
+  padding: 0 32px;
+  color: white;
+  text-shadow: 0 0 5px black;
+  /* background-color: rgba(100, 100, 100, 0.75); */
+}
+
+.forge-h2 {
+  /* position: absolute; */
+  /* top: 10em; */
+  font-size: 7rem;
+  /* color: white;
+  text-shadow: 0 0 5px black; */
+}
+
+.forge-bg {
+  transform: translateZ(-10px) scale(2);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.forge-fg {
+  margin-top: 25em;
+  margin-left: -50em;
+  transform: translateZ(-5px) scale(1.25);
+}
+
+.forge-bg,
+.forge-fg {
+  position: absolute;
+  top: 120em;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
   z-index: -1;
 }
 
 footer {
   position: relative;
-  /* display: flex;
-  justify-content: center; */
-  /* align-items: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   width: 100%;
   /* margin-top: 100%; */
+}
+
+.footer-signup {
+  position: absolute;
+  top: 15em;
+  left: 10em;
+  font-size: 7rem;
+  color: white;
+  text-shadow: 0 0 5px black;
+  transition: 0.5s;
+}
+
+.footer-signup:hover {
+  color: rgb(99, 57, 9);
+  text-shadow: 10px -10px 10px rgb(8, 89, 180);
+}
+
+.footer-bg {
+  position: absolute;
+  top: 120em;
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -4;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .footer-nav {
@@ -165,11 +240,11 @@ footer {
   /* margin-top: -50em; */
   position: absolute;
   /* bottom: 0; */
-  margin-top: 100%;
+  margin-top: 142%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 48px;
+  height: 68px;
   width: 100%;
   padding: 0 32px;
   color: white;
