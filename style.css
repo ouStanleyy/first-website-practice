@@ -111,13 +111,21 @@ main {
   justify-content: space-around;
   align-items: center;
   /* height: 48px; */
-  top: 100em;
+  top: 60em;
   height: 10em;
   width: 100%;
   padding: 0 32px;
   color: white;
   text-shadow: 0 0 5px black;
   /* background-color: rgba(100, 100, 100, 0.75); */
+}
+
+.explore-h2 {
+  /* position: absolute; */
+  /* top: 10em; */
+  font-size: 7rem;
+  /* color: white;
+  text-shadow: 0 0 5px black; */
 }
 
 .explore-bg {
@@ -140,14 +148,6 @@ main {
   width: 100%;
   object-fit: cover;
   z-index: -1;
-}
-
-.explore-h2 {
-  /* position: absolute; */
-  /* top: 10em; */
-  font-size: 7rem;
-  /* color: white;
-  text-shadow: 0 0 5px black; */
 }
 
 footer {
