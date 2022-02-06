@@ -261,3 +261,36 @@ footer {
   font-weight: 500;
   padding: 4px 32px;
 }
+
+.explore-div {
+  transform: translateX(300px);
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.explore-div.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.forge-div {
+  transform: translateX(-300px);
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.forge-div.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.footer-signup {
+  transform: translateY(300px);
+  opacity: 0;
+  transition: 2.5s;
+}
+
+.footer-signup.show {
+  transform: translateY(0);
+  opacity: 1;
+}
