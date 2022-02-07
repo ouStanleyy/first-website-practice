@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: url("images/game-bg-7.png") no-repeat center fixed;
+  background-size: cover;
+}
+
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 4px 32px;
+}
+
+.header-nav {
+  position: sticky;
+  top: 0;
+}
+
+.footer-nav {
+  position: fixed;
+  bottom: 0;
+}
+
+.header-nav,
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 68px;
+  width: 100%;
+  padding: 0 32px;
+  color: white;
+  text-shadow: 0 0 5px black;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+legend {
+  margin: 0 auto;
+  margin-bottom: 24px;
+  border: 2px solid black;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 16px;
+  padding: 4px 8px;
+  font-size: 36px;
+}
+
+fieldset {
+  margin: 0 auto;
+  width: 40em;
+  padding: 1em 10em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+  border-radius: 5em;
+  padding-bottom: 5em;
+  margin-top: 5em;
+  /* display: grid;
+  display: flex;
+  grid-template: auto / 1fr 1fr; */
+  /* flex-direction: row; */
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+  /* justify-content: center; */
+  /* border: 1px solid indianred; */
+  /* margin: 0 auto; */
+}
+
+label {
+  margin: 0 auto;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: white;
+}
+
+input,
+button {
+  font-size: 14px;
+  padding-left: 1em;
+  border: none;
+  border-radius: 12px;
+  height: 2em;
+  /* width: 25em; */
+  /* margin-bottom: 8px; */
+}
+
+button {
+  background-color: #3de17c;
+}
+
+button:hover {
+  font-size: 16px;
+  height: 1.75em;
+  box-shadow: 0 0 10px yellowgreen;
+}
+
+.agreements {
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.agreement-labels {
+  margin-left: 1em;
+}

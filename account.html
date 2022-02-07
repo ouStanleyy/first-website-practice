@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Account</title>
+    <link rel="stylesheet" href="account.css" />
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="header-nav">
         <ul>
           <li>News</li>
           <li><a href="index.html">Explore </a></li>
@@ -22,28 +23,28 @@
     </header>
 
     <main>
-      <form action="" method="post">
+      <form action="#" method="post">
         <fieldset>
-          <legend>Create an account</legend>
+          <legend>Account Creation</legend>
 
           <div>
             <label for="firstName">First Name</label>
-            <input type="text" name="first_name" id="firstName" />
+            <input type="text" name="first_name" placeholder="First Name" id="firstName" />
           </div>
 
           <div>
             <label for="lastName">Last Name</label>
-            <input type="text" name="last_name" id="lastName" />
+            <input type="text" name="last_name" placeholder="Last Name" id="lastName" />
           </div>
 
           <div>
             <label for="email">Email Address</label>
-            <input type="email" name="email" id="email" />
+            <input type="email" name="email" placeholder="Email Address" id="email" />
           </div>
 
           <div>
             <label for="password">New Password</label>
-            <input type="password" name="password" id="password" />
+            <input type="password" name="password" placeholder="New Password" id="password" />
           </div>
 
           <div>
@@ -52,26 +53,31 @@
           </div>
 
           <div class="agreements">
-            <label for="newsletter"
+            <label for="newsletter" class="agreement-labels"
               >Sign up for newsletter and special offers.</label
             >
-            <input type="checkbox" name="newsletter" id="newsletter" />
-
-            <label for="agreement">Agree to terms and conditions.</label>
-            <input type="checkbox" name="agreement" id="agreement" />
+            <input type="checkbox" name="newsletter" />
+          </div>
+          <div class="agreements">
+            <label for="agreement" class="agreement-labels">Agree to terms and conditions.</label>
+            <input type="checkbox" name="agreement" />
           </div>
 
-          <div><button type="submit">Create your account</button></div>
+          <div><button type="submit">Create Your Account</button></div>
         </fieldset>
       </form>
     </main>
 
     <footer>
-      <ul>
-        <li>Support</li>
-        <li>Your Account</li>
-        <li>Community</li>
-      </ul>
+      <nav class="footer-nav">
+        <ul>
+          <li>Support</li>
+          <li>Your Account</li>
+          <li>About Us</li>
+          <li>FAQs</li>
+          <li>Terms of Use</li>
+          <li>Privacy Policy</li>
+        </ul>
     </footer>
   </body>
 </html>
