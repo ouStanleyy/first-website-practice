@@ -11,9 +11,17 @@
 
   <body>
     <div class="wrapper">
-      <header>
-        <img src="images/game-background-3.jpeg" class="background" />
-        <img src="images/dual-blade-class.png" class="foreground" />
+      <div class="wrapper__group">
+        <img
+          src="images/game-background-3.jpeg"
+          class="wrapper__layer wrapper__layer--header-bg"
+          id="header-bg"
+        />
+        <img
+          src="images/dual-blade-class.png"
+          class="wrapper__layer wrapper__layer--header-fg"
+          id="header-fg"
+        />
         <h1 class="title">GinkgoStory</h1>
         <nav class="header-nav">
           <ul>
@@ -26,16 +34,24 @@
             <li>Log in</li>
           </ul>
         </nav>
-      </header>
+      </div>
 
-      <section>
+      <div class="wrapper__group">
         <div class="explore-div">
           <h2 class="explore-h2">Explore The World</h2>
         </div>
-        <img src="images/game-background-4.jpeg" class="explore-bg" />
-        <img src="images/explorers-class.png" class="explore-fg" />
-      </section>
-      <section id="forge">
+        <img
+          src="images/game-background-4.jpeg"
+          class="wrapper__layer wrapper__layer--explore-bg"
+          id="explore-bg"
+        />
+        <img
+          src="images/explorers-class.png"
+          class="wrapper__layer wrapper__layer--explore-fg"
+          id="explore-fg"
+        />
+      </div>
+      <section class="wrapper__group" id="forge">
         <div class="forge-div">
           <h2 class="forge-h2">Forge Your Hero</h2>
         </div>
