@@ -1,6 +1,6 @@
 const explore = document.querySelector(".explore-div");
 const forge = document.querySelector(".forge-div");
-const footerSignup = document.querySelector(".footer-signup");
+const footerSignup = document.querySelector(".footer-signup-div");
 
 const observer = new IntersectionObserver(
   (entries) => {
