@@ -8,6 +8,7 @@ body {
   box-sizing: content-box;
   overflow-x: hidden;
   position: relative;
+  display: block;
 }
 
 a:link,
@@ -31,7 +32,7 @@ header {
 
 nav ul li {
   display: inline-block;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   padding: 4px 32px;
 }
@@ -61,7 +62,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 68px;
+  height: 40px;
   width: 100%;
   padding: 0 32px;
   color: white;
@@ -76,6 +77,7 @@ footer {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
+  scroll-snap-type: y mandatory;
 }
 
 section {
@@ -85,7 +87,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
 }
 
 .wrapper__layer::after {
@@ -101,14 +103,20 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
-  border: 2px solid blue;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  /* border-top: 2px solid black;
+  border-bottom: 2px solid black; */
+  /* border: 2px solid blue; */
 }
 
 .wrapper__layer--header-bg::after {
   background-image: url("images/game-background-3.jpeg");
   transform: translateZ(-1px) scale(2);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.wrapper__layer--header-bg {
+  scroll-snap-align: start;
 }
 
 .wrapper__layer--header-fg {
@@ -122,6 +130,12 @@ section {
 .wrapper__layer--explore-bg::after {
   background-image: url("images/game-background-4.jpeg");
   transform: translateZ(-1px) scale(2);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.wrapper__layer--explore-bg {
+  scroll-snap-align: start;
 }
 
 .wrapper__layer--explore-fg {
@@ -135,6 +149,12 @@ section {
 .wrapper__layer--forge-bg::after {
   background-image: url("images/game-background-2.jpeg");
   transform: translateZ(-1px) scale(2);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.wrapper__layer--forge-bg {
+  scroll-snap-align: start;
 }
 
 .wrapper__layer--forge-fg {
@@ -145,6 +165,17 @@ section {
   z-index: 1;
 }
 
+.wrapper__layer--footer-bg::after {
+  background-image: url("images/game-bg-6.jpeg");
+  transform: translateZ(-1px) scale(2);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.wrapper__layer--footer-bg {
+  scroll-snap-align: start;
+}
+
 .wrapper__static {
   position: relative;
   display: flex;
@@ -152,8 +183,8 @@ section {
   align-items: center;
   color: white;
   text-shadow: 0 0 5px black;
-  border: 2px solid red;
   z-index: 2;
+  /* border: 2px solid red; */
 }
 
 .title-div {
@@ -184,8 +215,7 @@ section {
 }
 
 .footer-signup-div {
-  /* top: -20em; */
-  left: 25em;
+  top: -30em;
 }
 
 .footer-signup-h2 {
@@ -197,17 +227,6 @@ section {
 .footer-signup-h2:hover {
   color: rgb(99, 57, 9);
   text-shadow: 10px -10px 10px rgb(8, 89, 180);
-}
-
-.footer-bg {
-  position: absolute;
-  top: 120em;
-  height: 60%;
-  width: 100%;
-  object-fit: cover;
-  z-index: -4;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
 }
 
 .explore-div {
@@ -241,4 +260,16 @@ section {
 .footer-signup-div.show {
   transform: translateY(0);
   opacity: 1;
+}
+
+.footer-bg {
+  /* position: absolute; */
+  /* top: -50em; */
+  /* height: 60%; */
+  /* width: 100%; */
+  /* object-fit: cover; */
+  /* z-index: -4; */
+  /* border-top: 2px solid black; */
+  /* border-bottom: 2px solid black; */
+  /* scroll-snap-align: start; */
 }

@@ -16,7 +16,7 @@ a:visited {
 
 nav ul li {
   display: inline-block;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   padding: 4px 32px;
 }
@@ -36,7 +36,7 @@ nav ul li {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 68px;
+  height: 40px;
   width: 100%;
   padding: 0 32px;
   color: white;
